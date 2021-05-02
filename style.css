@@ -1,0 +1,55 @@
+.parent{
+    position: relative;
+    width: 200px;
+    height:100px;
+    padding: 5px;
+   transform-style: preserve-3d;
+    transition: transform 0.10s;
+    cursor: pointer;
+}
+/*
+.parent:hover {
+    transform: rotateY(180deg);
+} 
+*/
+.parent.flip {
+    transform: rotateY(180deg);
+} 
+.common{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    padding: 5px;
+    color: white;
+
+    background: black;
+    border: 2px solid black;
+    border-radius: 25px;
+    align-items: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+}
+.front{
+    
+    background: blue;
+    font-size: 19px;
+    
+    
+}
+
+.back{
+    background: red;
+    transform: rotateY(180deg);
+   
+
+    
+
+}
+.container{
+    perspective: 1000px;
+     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+}
